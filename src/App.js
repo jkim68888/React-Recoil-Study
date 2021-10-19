@@ -1,21 +1,12 @@
-import {
-  // RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from "recoil";
 import logo from "./logo.svg";
 import "./App.css";
 import Child from "./Child";
-import textState from "./atoms";
+import Another from "./Another";
 
 function App() {
-  const [text, setText] = useRecoilState(textState);
-
   return (
     <div className="App">
-      <input
+      {/* <input
         type="text"
         value={text}
         // 리액트 특징상 이렇게 value를 지정해주면, text의 값이 바뀌지 않는 이상 죽었다 깨나도, 이 인푹박승ㄴ아 내용이 바끼지 않는다!
@@ -24,7 +15,9 @@ function App() {
         onChange={(e) => {
           setText(e.target.value);
         }}
-      />
+      /> */}
+
+      <Another />
 
       <Child />
 
