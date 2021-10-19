@@ -15,4 +15,4 @@ const ageState = atom({
   default: 0,
 });
 
-export { textState };
+export { textState, ageState };
