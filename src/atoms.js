@@ -10,4 +10,9 @@ const textState = atom({
   default: "", // default value (aka initial value)
 });
 
-export default textState;
+const ageState = atom({
+  key: "ageState",
+  default: 0,
+});
+
+export { textState };

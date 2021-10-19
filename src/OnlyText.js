@@ -1,5 +1,5 @@
 import { useRecoilState } from "recoil";
-import textState from "./atoms";
+import { textState } from "./atoms";
 
 function OnlyText() {
   const [text, setText] = useRecoilState(textState);
