@@ -8,12 +8,7 @@ import {
 import logo from "./logo.svg";
 import "./App.css";
 import Child from "./Child";
-
-const textState = atom({
-  // atom()은 react hook이 아니다! 그래서 이렇게 react component바깥에 있당!
-  key: "textState", // unique ID (with respect to other atoms/selectors)
-  default: "", // default value (aka initial value)
-});
+import textState from "./atoms";
 
 function App() {
   const [text, setText] = useRecoilState(textState);
